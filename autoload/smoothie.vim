@@ -30,14 +30,14 @@ if !exists('g:smoothie_speed_constant_factor')
   ""
   " This value controls constant term of the velocity curve. Increasing this
   " boosts primarily cursor speed at the end of animation.
-  let g:smoothie_speed_constant_factor = 10
+  let g:smoothie_speed_constant_factor = 20
 endif
 
 if !exists('g:smoothie_speed_linear_factor')
   ""
   " This value controls linear term of the velocity curve. Increasing this
   " boosts primarily cursor speed at the beginning of animation.
-  let g:smoothie_speed_linear_factor = 10
+  let g:smoothie_speed_linear_factor = 18
 endif
 
 if !exists('g:smoothie_speed_exponentiation_factor')
@@ -45,7 +45,7 @@ if !exists('g:smoothie_speed_exponentiation_factor')
   " This value controls exponent of the power function in the velocity curve.
   " Generally should be less or equal to 1.0. Lower values produce longer but
   " perceivably smoother animation.
-  let g:smoothie_speed_exponentiation_factor = 0.9
+  let g:smoothie_speed_exponentiation_factor = 0.93
 endif
 
 if !exists('g:smoothie_break_on_reverse')
